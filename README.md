@@ -134,17 +134,18 @@ docker run -d \
 ```
 
 ## Unraid Installation
-
-1. Go to your Unraid web UI
-2. Navigate to Docker > Add Container
-3. Select "Template" and choose the XML template
-4. Configure the required variables
-5. Click Apply
+1. Download template
+2. Place template in your boot usb at /boot/config/plugins/dockerMan/templates-user
+3. Go to your Unraid web UI
+4. Navigate to Docker > Add Container
+5. Select "Template" and choose the XML template
+6. Configure the required variables
+7. Click Apply
 
 ### Unraid XML Templates
 
-- `unraid/docker-registry-sqlite.xml` - SQLite version
-- `unraid/docker-registry-mariadb.xml` - MariaDB version
+- `[unraid/docker-registry-sqlite.xml](https://github.com/wildfirebill-unraid/Unraid_Templates_By_Me/blob/6ac2d4f45c2173b0bc6420fe0e9e291cf75ab74c/templates/tools/docker-registry-sqlite.xml)` - SQLite version
+- `[unraid/docker-registry-mariadb.xml](https://github.com/wildfirebill-unraid/Unraid_Templates_By_Me/blob/6ac2d4f45c2173b0bc6420fe0e9e291cf75ab74c/templates/tools/docker-registry-mariadb.xml)` - MariaDB version
 
 ## Building VM Images
 
