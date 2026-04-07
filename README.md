@@ -145,6 +145,7 @@ docker run -d \
 ### Unraid XML Templates
 
 https://github.com/wildfirebill-unraid/Unraid_Templates_By_Me/blob/6ac2d4f45c2173b0bc6420fe0e9e291cf75ab74c/templates/tools/docker-registry-sqlite.xml - SQLite version
+
 https://github.com/wildfirebill-unraid/Unraid_Templates_By_Me/blob/6ac2d4f45c2173b0bc6420fe0e9e291cf75ab74c/templates/tools/docker-registry-mariadb.xml - MariaDB version
 
 ## Building VM Images
