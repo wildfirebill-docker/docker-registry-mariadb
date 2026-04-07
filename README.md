@@ -88,13 +88,50 @@ docker run -d \
 | Variable | Description | Default |
 |----------|-------------|---------|
 | PORT | Server port | 8080 |
-| DB_DRIVER | Database driver (sqlite/mysql) | sqlite |
-| DB_SOURCE | Database connection string | /data/registry.db |
+| DB_DRIVER | Database driver (sqlite/mysql/mariadb) | sqlite |
+| DB_SOURCE | Full DSN connection string (overrides individual DB_* vars) | /data/registry.db |
+| DB_HOST | External database host (leave empty for SQLite) | localhost |
+| DB_PORT | External database port | 3306 |
+| DB_USER | External database username | root |
+| DB_PASSWORD | External database password | password |
+| DB_NAME | External database name | registry |
 | JWT_SECRET | Secret key for JWT tokens | auto-generated |
 | ADMIN_USERNAME | Initial admin username | admin |
 | ADMIN_PASSWORD | Initial admin password | admin123 |
 | ADMIN_EMAIL | Admin email | admin@localhost |
 | HTTPS_ENABLED | Enable HTTPS cookies | false |
+
+### SQLite Usage
+```bash
+docker run -d \
+  -p 8080:8080 \
+  -v registry-data:/data \
+  -e DB_DRIVER=sqlite \
+  -e DB_SOURCE=/data/registry.db \
+  docker-registry-sqlite
+```
+
+### External MySQL/MariaDB Usage
+```bash
+docker run -d \
+  -p 8080:8080 \
+  -e DB_DRIVER=mysql \
+  -e DB_HOST=mariadb.example.com \
+  -e DB_PORT=3306 \
+  -e DB_USER=registry \
+  -e DB_PASSWORD=secure_password \
+  -e DB_NAME=registry \
+  docker-registry-sqlite
+```
+
+Or use full DSN:
+```bash
+docker run -d \
+  -p 8080:8080 \
+  -e DB_DRIVER=mysql \
+  -e DB_SOURCE="user:password@tcp(host:3306)/dbname" \
+  docker-registry-sqlite
+```
 
 ## Unraid Installation
 
