@@ -2,11 +2,11 @@
 <Container>
   <Name>docker-registry-mariadb</Name>
   <Description>Private Docker Registry with Multi-User Support and Modern Web UI (MariaDB Version)</Description>
-  <Registry>https://raw.githubusercontent.com/anergy/badUnraid/main</Registry>
+  <Registry>ghcr.io/wildfirebill-docker/docker-registry-mariadb:main</Registry>
   <Repository>wildfirebill/docker-registry-mariadb</Repository>
   <Vendor></Vendor>
-  <SupportURL>https://github.com/wildfirebill/docker-registry</SupportURL>
-  <ProjectURL>https://github.com/wildfirebill/docker-registry</ProjectURL>
+  <SupportURL>https://github.com/wildfirebill-docker/docker-registry-mariadb/issues</SupportURL>
+  <ProjectURL>https://github.com/wildfirebill-docker/docker-registry-mariadb</ProjectURL>
   <Icon>https://raw.githubusercontent.com/docker-library/docs/master/docker-logo.png</Icon>
   <Categories>
     <Category>Utilities</Category>
