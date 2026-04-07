@@ -3,7 +3,7 @@
   <Name>docker-registry-mariadb</Name>
   <Description>Private Docker Registry with Multi-User Support and Modern Web UI (MariaDB Version)</Description>
   <Registry>ghcr.io/wildfirebill-docker/docker-registry-mariadb:main</Registry>
-  <Repository>wildfirebill/docker-registry-mariadb</Repository>
+  <Repository>https://github.com/wildfirebill-docker/docker-registry-mariadb</Repository>
   <Vendor></Vendor>
   <SupportURL>https://github.com/wildfirebill-docker/docker-registry-mariadb/issues</SupportURL>
   <ProjectURL>https://github.com/wildfirebill-docker/docker-registry-mariadb</ProjectURL>
