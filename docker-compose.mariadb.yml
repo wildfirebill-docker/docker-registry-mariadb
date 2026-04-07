@@ -22,7 +22,7 @@ services:
   registry:
     build:
       context: ..
-      dockerfile: docker/Dockerfile.mariadb
+      dockerfile: Dockerfile
     image: docker-registry-mariadb:latest
     container_name: docker-registry-mariadb-app
     ports:
